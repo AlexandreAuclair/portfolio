@@ -1,0 +1,39 @@
+:root{
+    --grad-1: rgb(87,50,133);
+    --grad-2: rgb(120,173,110);
+}
+
+
+.hero {
+    color:rgb(106,153,85);
+    width: 0 auto;
+}
+
+.hero h2 {
+    margin-left: 30px;
+    font-family: "Consolas", sans-serif;
+    font-size: 5em;
+    font-weight: 100;
+    line-height: 1.6;
+    display: block;
+    position: relative;
+}
+
+.mask {
+    margin-left: 30px;
+    font-size: .9em;
+    font-weight: 100;
+    line-height: 1.6;
+    display: block;
+    position: relative;
+}
+
+.mask::before {
+    content: " ";
+    width: 2px;
+    background: linear-gradient(0deg,var(--grad-2)0%,var(--grad-1)100%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -30px;
+}

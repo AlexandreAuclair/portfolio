@@ -5,12 +5,13 @@ header
 }
 
 .logo{
-    margin-left: 3rem;
+    margin: 3rem;
+    transition: all 50ms ease-in-out;
 }
 
 .logo a{
     text-decoration: none;
-    color: #3160E1
+    color: #3160E1;
 }
 
 .nav-menu{
@@ -25,7 +26,6 @@ header
 }
 
 .nav-menu li a {
-    color: #ccc;
     margin-left:30px;
     line-height: 1.5;
     display: flex;
@@ -34,8 +34,16 @@ header
 .nav-menu li a svg {
     width: 25px;
     height: 25px;
+    fill: #fff;
 }
 
 .nav-menu li a svg g{
     line-height: 1.5;
+}
+
+@media screen and (max-width: 1040px) {
+    .nav-menu li a svg {
+        width: 35px;
+        height: 35px;
+    }
 }
